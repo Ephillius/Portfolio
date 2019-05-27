@@ -5,37 +5,44 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bernardo Ferreira</title>
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="plugins/slick-gallery/slick.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<!--name and links-->
-	<header>
-		<div class="logo">
-		</div>
-
-		<div class="links">
-		</div>
+	<header class="header">
+			<h3 class="logo"><a href="#top">Bernardo Ferreira</a></h3>
 	</header>
 
 	<!--gallery, photo and info-->
 	<main>
-		<div class="profile">
+		<div id="top" class="profile">
+			<img src="images/profile.jpg" class="photo">
+			<h1>Hello. I'm Bernardo.</h1>
+			<h2>A Frontend Developer & Designer.</h2>
+			<a href="mailto:bernardoferreira12@hotmail.com" class="email">Let's Work Together</a>
 		</div>
 
-		<div class="info">
-			<div class="summary">
-			</div>
-
-			<div class="gallery">
-			</div>
+		<div id="work" class="gallery">
+			<a href="#top">Back To Top</a>
 		</div>
 	</main>
 
 	<!--contact info-->
 	<footer>
-		<div class="foot">
-			<a href="mailto:bernardoferreira12@hotmail.com">Let's Work Together</a>
+		<div id="social" class="foot">
+			<ul>
+				<li><a href="https://drive.google.com/file/d/1l1w7B277WEy58HJfbXwwER1DQZruAyTy/view?usp=sharing" target="_blank" class="social resume">Resume</a></li>
+				<li><a href="https://www.linkedin.com/in/bernardo-ferreira/" target="_blank" class="social linkedin">LinkedIn</a></li>
+				<li><a href="https://github.com/Ephillius" target="_blank" class="social github">Github</a></li>
+			</ul>
+			<a href="#top">Back To Top</a>
 		</div>
 	</footer>
+
+	<!--scripts-->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="plugins/slick-gallery/slick.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
