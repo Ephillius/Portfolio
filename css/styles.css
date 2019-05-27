@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+    padding: 0;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #222;
+	background: teal;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+li {
+	/*empty*/
+}
+
+
+/*HEADER*/
+.header {
+	z-index: 1;
+	position: fixed;
+    width: 100%;
+	background-color: #131313;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header h3 {
+	display: inline-block;
+	text-transform: uppercase;	
+	padding: 10px 30px;
+	margin-left: auto;
+	margin-right: auto;
+    border-left: 5px dashed teal;
+    border-right: 5px dashed teal;
+    transition: color 150ms ease-in-out;
+    transition: border 200ms ease-in-out;
+}
+
+.header h3 a {
+	color: white;
+}
+
+.header h3 a:hover {
+	color: teal;
+}
+
+.header h3:hover {
+	border: 0;
+    border-left: 5px solid orange;
+    border-right: 5px solid orange;
+}
+
+.nav-item:active {
+	color: grey;
+	border-color: black;
+}
+
+
+/*PROFILE*/
+.profile {
+	padding-top: 140px;
+	background: url("../images/background.jpg") no-repeat center center;
+	background-size: cover;
+	opacity: .5;
+}
+
+.photo {
+	width: 200px;
+	border-radius: 100%;
+	border: 5px solid white;
+	opacity: 1;
+}
+
+/*SOCIAL LINKS*/
+a.social {
+	display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    opacity: 1;
+    transition: all .5s;
+}
+a.resume {
+	background-image: url("../images/cv.png");
+}
+
+a.linkedin {
+	background-image: url("../images/linkedin.svg");
+}
+
+a.github {
+	background-image: url("../images/github.svg");
+}
+
+
+
+
+/*CLEARFIX HACK*/
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
