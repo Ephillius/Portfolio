@@ -8,7 +8,7 @@ body {
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 	color: #222;
-	background: teal;
+	background: #222;
 }
 
 main {
@@ -26,10 +26,17 @@ ul {
 	padding-left: 0;
 }
 
-li {
-	/*empty*/
+/*SHARED CSS*/
+.email,
+.project a {
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 6vh;
+	border-radius: 10px;
+	background-color: orange;
+	color: white;
+	font-weight: bold;
 }
-
 
 /*HEADER*/
 .header {
@@ -74,17 +81,52 @@ li {
 
 /*PROFILE*/
 .profile {
+	position: relative;
 	padding-top: 140px;
 	background: url("../images/background.jpg") no-repeat center center;
 	background-size: cover;
-	opacity: .5;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	background-color: rgba(0, 128, 128, 0.6);
+}
+
+.intro {
+	position: relative;
 }
 
 .photo {
 	width: 200px;
 	border-radius: 100%;
 	border: 5px solid white;
+}
+
+.profile h1 {
+	color: white;
+}
+
+.profile h2 {
+	color: white;
+}
+/*
+.email:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+				0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}*/
+
+/*PROJECTS*/
+.project a {
+	opacity: .7;
+}
+
+.project a:hover {
 	opacity: 1;
+	background-color: teal;
 }
 
 /*SOCIAL LINKS*/
