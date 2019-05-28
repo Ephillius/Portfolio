@@ -1,3 +1,4 @@
+/*GLOBALS*/
 * {
 	box-sizing: border-box;
 }
@@ -14,6 +15,7 @@ body {
 main {
     padding: 0;
     margin: 0;
+    border-bottom: 10px dashed teal;
 }
 
 a,
@@ -26,12 +28,16 @@ ul {
 	padding-left: 0;
 }
 
+a[href^='#top'] {
+	color: white;
+}
+
 /*SHARED CSS*/
 .email,
 .project a {
 	display: inline-block;
 	padding: 10px;
-	margin-bottom: 6vh;
+	margin-bottom: 5vh;
 	border-radius: 10px;
 	background-color: orange;
 	color: white;
@@ -47,7 +53,7 @@ ul {
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
-.header h3 {
+.header .logo {
 	display: inline-block;
 	text-transform: uppercase;	
 	padding: 10px 30px;
@@ -55,19 +61,19 @@ ul {
 	margin-right: auto;
     border-left: 5px dashed teal;
     border-right: 5px dashed teal;
-    transition: color 150ms ease-in-out;
-    transition: border 200ms ease-in-out;
+    transition: border .2s;
 }
 
-.header h3 a {
+.header .logo a {
 	color: white;
+	transition: color .1s;
 }
 
-.header h3 a:hover {
+.header .logo a:hover {
 	color: teal;
 }
 
-.header h3:hover {
+.header .logo:hover {
 	border: 0;
     border-left: 5px solid orange;
     border-right: 5px solid orange;
@@ -113,13 +119,26 @@ ul {
 .profile h2 {
 	color: white;
 }
-/*
-.email:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
-				0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}*/
+
+.email {
+	font-size: 20px;
+}
 
 /*PROJECTS*/
+.gallery {
+	padding: 20px 30px;
+	border-bottom: ;
+}
+
+.title {
+	color: white;
+	margin: 50px 0;
+}
+
+.project {
+	margin-bottom: 30px;
+}
+
 .project a {
 	opacity: .7;
 }
@@ -129,7 +148,29 @@ ul {
 	background-color: teal;
 }
 
+.frame {
+	width: 100%;
+}
+
+.frame img {
+	display: block;
+	width: 100%;
+}
+
+.folder {
+	background-color: teal;
+	text-align: left;
+	margin: 10px 0;
+}
+
+.project-name,
+.caption {
+	color: white;
+	padding: 5px 10px;
+}
+
 /*SOCIAL LINKS*/
+
 a.social {
 	display: inline-block;
     text-indent: -9999px;
@@ -141,17 +182,16 @@ a.social {
     transition: all .5s;
 }
 a.resume {
-	background-image: url("../images/cv.png");
+	background-image: url("../images/icons/cv.png");
 }
 
 a.linkedin {
-	background-image: url("../images/linkedin.svg");
+	background-image: url("../images/icons/linkedin.svg");
 }
 
 a.github {
-	background-image: url("../images/github.svg");
+	background-image: url("../images/icons/github.svg");
 }
-
 
 
 
