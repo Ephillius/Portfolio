@@ -15,7 +15,7 @@ body {
 main {
     padding: 0;
     margin: 0;
-    border-bottom: 10px dashed teal;
+    border-bottom: 10px dashed #1282A2;
 }
 
 a,
@@ -24,23 +24,31 @@ a:visited {
 }
 
 ul {
+	margin-top: 40px;
 	list-style: none;
 	padding-left: 0;
 }
 
 a[href^='#top'] {
-	color: white;
+	color: #FEFCFB;
+	margin-bottom: 30px;
+}
+
+.intro span,
+.foot span {
+	display: inline-block;
+	color: #FEFCFB;
+	font-size: 10px;
+	padding-bottom: 12px; 
 }
 
 /*SHARED CSS*/
 .email,
 .project a {
-	display: inline-block;
 	padding: 10px;
-	margin-bottom: 5vh;
+	margin-bottom: 1vh;
 	border-radius: 10px;
-	background-color: orange;
-	color: white;
+	color: #FEFCFB;
 	font-weight: bold;
 }
 
@@ -49,7 +57,7 @@ a[href^='#top'] {
 	z-index: 1;
 	position: fixed;
     width: 100%;
-	background-color: #131313;
+	background-color: #222;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
@@ -59,38 +67,55 @@ a[href^='#top'] {
 	padding: 10px 30px;
 	margin-left: auto;
 	margin-right: auto;
-    border-left: 5px dashed teal;
-    border-right: 5px dashed teal;
+    border-left: 5px dashed #1282A2;
+    border-right: 5px dashed #1282A2;
     transition: border .2s;
 }
 
 .header .logo a {
-	color: white;
+	color: #FEFCFB;
 	transition: color .1s;
 }
 
 .header .logo a:hover {
-	color: teal;
+	color: #1282A2;
 }
 
 .header .logo:hover {
 	border: 0;
-    border-left: 5px solid orange;
-    border-right: 5px solid orange;
+    border-left: 5px solid #FFAD17;
+    border-right: 5px solid #FFAD17;
 }
 
 .nav-item:active {
 	color: grey;
-	border-color: black;
+	border-color: #222;
 }
 
 
 /*PROFILE*/
 .profile {
 	position: relative;
-	padding-top: 140px;
+	height: 100vh;
 	background: url("../images/background.jpg") no-repeat center center;
 	background-size: cover;
+}
+
+.profile > a {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -17.5px;
+    color: #FEFCFB;
+}
+
+.profile > a i {
+	font-size: 40px;
+	transition: color .5s;
+}
+
+.profile > a i:hover {
+	color: #FFAD17;
 }
 
 .overlay {
@@ -104,52 +129,56 @@ a[href^='#top'] {
 
 .intro {
 	position: relative;
+	padding-top: 18vh;
 }
 
 .photo {
 	width: 200px;
 	border-radius: 100%;
-	border: 5px solid white;
+	border: 5px solid #FEFCFB;
 }
 
 .profile h1 {
-	color: white;
+	color: #FEFCFB;
 }
 
 .profile h2 {
-	color: white;
+	color: #FEFCFB;
 }
 
-.email {
+.intro .email {
+	display: block;
+    width: 215px;
+    margin: 0 auto;
 	font-size: 20px;
+	background-color: #FFAD17;
 }
 
 /*PROJECTS*/
 .gallery {
 	padding: 20px 30px;
-	border-bottom: ;
 }
 
 .title {
-	color: white;
+	text-transform: uppercase;
+	color: #FEFCFB;
 	margin: 50px 0;
+	padding-top: 30px;
+	border-top: 10px dashed #1282A2;
 }
 
 .project {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 .project a {
-	opacity: .7;
+	display: inline-block;	
+	background-color: #667761;
 }
 
 .project a:hover {
 	opacity: 1;
-	background-color: teal;
-}
-
-.frame {
-	width: 100%;
+	background-color: #1282A2;
 }
 
 .frame img {
@@ -158,23 +187,38 @@ a[href^='#top'] {
 }
 
 .folder {
-	background-color: teal;
+	background-color: #1282A2;
 	text-align: left;
 	margin: 10px 0;
+	border-top: 5px dashed #1282A2;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .project-name,
 .caption {
-	color: white;
+	color: #FEFCFB;
 	padding: 5px 10px;
+	margin: 0;
 }
 
 /*SOCIAL LINKS*/
+.foot{
+	padding: 10px 0;
+}
+
+.foot p {
+	color: #FEFCFB;
+}
+
+.foot ul li {
+	display: inline-block;
+}
 
 a.social {
 	display: inline-block;
     text-indent: -9999px;
-    margin-left: 5px;
+    margin: 5px;
     width: 30px;
     height: 30px;
     background-size: 30px 30px;
@@ -192,6 +236,92 @@ a.linkedin {
 a.github {
 	background-image: url("../images/icons/github.svg");
 }
+
+.foot .email {
+	width: 100px;
+	background-color: #FFAD17;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 768px) {
+	.intro {
+		padding-top: 25vh; 
+	}
+
+	.intro .email {
+		font-size: 30px;
+		width: 320px;
+	}
+
+	.profile > a {
+		bottom: 30px;
+	}
+
+	.gallery {
+		padding-bottom: 50px;
+	}
+
+	.folder {
+		float: left;
+		width: 60%;
+	}
+
+	.project {
+		float: left;
+		width: 45%;
+		margin: 0 calc(10% / 4) 20px;
+	}
+
+	.project a {
+		margin: 10px 0;
+    	float: right;
+	}
+
+	.project a:nth-child(even) {
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.folder {
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	.intro {
+		font-size: 1.5em;
+	}
+
+	.profile > a {
+		margin-left: -21.25px;
+	}
+
+	.profile > a i {
+	    font-size: 60px;
+	}
+
+	.gallery {
+	    max-width: 1366px;
+	    margin: 0 auto;
+	}
+
+	.project {
+		float: left;
+		width: 25%;
+		margin: 0 calc(25% / 6) 20px;
+	}
+
+	.folder {
+		width: 60%;
+	}
+
+	a[href^='#top'] {
+		display: none;
+	}
+}
+
 
 
 
