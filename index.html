@@ -5,7 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bernardo Ferreira</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/hover.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -21,60 +24,94 @@
 			<div class="intro">
 				<img src="images/profile.jpg" class="photo">
 				<h1>Hello, I'm Bernardo.</h1>
-				<h2>A Frontend Developer & Designer.</h2>
-				<a href="mailto:bernardoferreira12@hotmail.com" class="email hvr-ripple-out">Let's Work Together</a>
+				<h2>Frontend Developer & Designer.</h2>
+				<a href="mailto:bernardoferreira12@hotmail.com" class="email">Let's Work Together</a>
 			</div>
 		</div>
 
 		<div id="work" class="gallery">
+			<h2 class="title">Portfolio</h2>
+
 			<div class="project 1">
-				<img src="" alt="Portfolio template">
-				<h3 class="caption"></h3>
+				<div class="frame">
+					<img src="images/projects/project1.png" alt="Personal profile">
+				</div>
+				<div class="folder">
+					<h3 class="project-name">Online Resume</h3>
+					<p class="caption"></p>
+				</div>
 				<a href="https://ephillius.github.io/techdegree-project1/" target="_blank">Check it out!</a>
 				<a href="https://github.com/Ephillius/techdegree-project1" target="_blank">See the code.</a>
 			</div>
 
 			<div class="project 2">
-				<img src="" alt="">
-				<h3 class="caption"></h3>
+				<div class="frame">
+					<img src="images/projects/project2.png" alt="Portfolio template">
+				</div>
+				<div class="folder">
+					<h3 class="project-name">Online Resume</h3>
+					<p class="caption"></p>
+				</div>
 				<a href="https://ephillius.github.io/techdegree-project2/" target="_blank">Check it out!</a>
 				<a href="https://github.com/Ephillius/techdegree-project2" target="_blank">See the code.</a>
 			</div>
 
 			<div class="project 3">
-				<img src="" alt="">
-				<h3 class="caption"></h3>
+				<div class="frame">
+					<img src="images/projects/project3.png" alt="Newsletter form">
+				</div>
+				<div class="folder">
+					<h3 class="project-name">Online Resume</h3>
+					<p class="caption"></p>
+				</div>
 				<a href="https://ephillius.github.io/techdegree-project3/" target="_blank">Check it out!</a>
 				<a href="https://github.com/Ephillius/techdegree-project3" target="_blank">See the code.</a>
 			</div>
 
 			<div class="project 4">
-				<img src="" alt="">
-				<h3 class="caption"></h3>
+				<div class="frame">
+					<img src="images/projects/project4.png" alt="Style guide kit">
+				</div>
+				<div class="folder">
+					<h3 class="project-name">Online Resume</h3>
+					<p class="caption"></p>
+				</div>
 				<a href="https://ephillius.github.io/techdegree-project4/" target="_blank">Check it out!</a>
 				<a href="https://github.com/Ephillius/techdegree-project4" target="_blank">See the code.</a>
 			</div>
 
 			<div class="project 5">
-				<img src="" alt="">
-				<h3 class="caption"></h3>
+				<div class="frame">
+					<img src="images/projects/project5.png" alt="Interactive image gallery">
+				</div>
+				<div class="folder">
+					<h3 class="project-name">Online Resume</h3>
+					<p class="caption"></p>
+				</div>
 				<a href="https://ephillius.github.io/techdegree-project5/" target="_blank">Check it out!</a>
 				<a href="https://github.com/Ephillius/techdegree-project5" target="_blank">See the code.</a>
 			</div>
-			<a href="#top">Back To Top</a>
+			<a href="#top" class="hvr-icon-wobble-vertical">
+				Back To Top
+				<i class="fas fa-arrow-up hvr-icon"></i>
+			</a>
 		</div>
 	</main>
 
 	<!--contact info-->
 	<footer>
 		<div id="social" class="foot">
+			<p>Want to get in touch?</p>
+			<a href="mailto:bernardoferreira12@hotmail.com" class="email">Say hi!</a>
 			<ul>
 				<li><a href="https://drive.google.com/file/d/1l1w7B277WEy58HJfbXwwER1DQZruAyTy/view?usp=sharing" target="_blank" class="social resume">Resume</a></li>
 				<li><a href="https://www.linkedin.com/in/bernardo-ferreira/" target="_blank" class="social linkedin">LinkedIn</a></li>
 				<li><a href="https://github.com/Ephillius" target="_blank" class="social github">Github</a></li>
 			</ul>
-			<a href="#top">Back To Top</a>
+			<span>&copy Bernardo Ferreira 2019</span>
 		</div>
 	</footer>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
