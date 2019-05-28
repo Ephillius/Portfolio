@@ -71,7 +71,7 @@
 .hvr-ripple-out:before {
 	content: '';
 	position: absolute;
-	border: orange solid 6px;
+	border: #FFAD17 solid 6px;
 	border-radius: 10px;
 	top: 0;
 	right: 0;
