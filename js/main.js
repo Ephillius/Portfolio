@@ -65,8 +65,27 @@ document.addEventListener('DOMContentLoaded', () => {
 	// 	'This is an "interactive" image gallery. I used a Lightbox plugin in order to showcase the pictures in a larger size. For the input (search bar), I had to come up with a search function that would show in realtime the potential matches to what the user was typing at the time, making the non-matched pics disappear.'
 	// ];
 
+	const scrollToWork = document.querySelector('.toWork');
+	const scrollToTop = document.querySelector('.btt');
 	const portfolio = document.querySelector('#work');
 	const email = document.getElementsByClassName('email');
+
+	function scroll(element) {
+		element.scrollIntoView(
+			{
+				behavior: "smooth", 
+				block: "start", 
+				inline: "nearest"
+			});
+	}
+
+	scrollToWork.addEventListener('click', () => {
+		scroll(portfolio);
+	});
+
+	scrollToTop.addEventListener('click', () => {
+		scroll(document.body);
+	});
 
 	for (let i = 0; i < email.length; i++) {
 		email[i].classList.add('hvr-ripple-out');
