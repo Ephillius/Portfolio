@@ -182,6 +182,10 @@ ul {
 	background-color: #1282A2;
 }
 
+.frame {
+	margin-bottom: 10px;
+}
+
 .frame img {
 	display: block;
 	width: 100%;
@@ -190,7 +194,7 @@ ul {
 .folder {
 	background-color: #1282A2;
 	text-align: left;
-	margin: 10px 0;
+	margin: 0;
 	border-top: 5px dashed #1282A2;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -227,7 +231,7 @@ a.social {
     transition: all .5s;
 }
 a.resume {
-	background-image: url("../images/icons/cv.png");
+	background-image: url("../images/icons/cv-icon.svg");
 }
 
 a.linkedin {
@@ -275,12 +279,8 @@ a.github {
 	}
 
 	.project a {
-		margin: 10px 0;
+		margin-bottom: 10px;
     	float: right;
-	}
-
-	.project a:nth-child(even) {
-		margin-top: 0;
 	}
 }
 
