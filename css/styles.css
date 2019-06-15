@@ -18,6 +18,10 @@ main {
     border-bottom: 10px dashed #1282A2;
 }
 
+a {
+	cursor:pointer
+}
+
 a,
 a:visited {
 	text-decoration: none;
@@ -52,6 +56,11 @@ ul {
 	font-weight: bold;
 }
 
+/*OVERLAY*/
+.overlay {
+	
+}
+
 /*HEADER*/
 .header {
 	z-index: 1;
@@ -73,13 +82,9 @@ ul {
     transition: border .2s;
 }
 
-.header .logo a {
+.header .logo {
 	color: #FEFCFB;
-	transition: color .1s;
-}
-
-.header .logo a:hover {
-	color: #1282A2;
+	transition: .3s;
 }
 
 .header .logo:hover {
