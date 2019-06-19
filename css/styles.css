@@ -102,20 +102,27 @@ ul {
 	background-size: cover;
 }
 
-.profile > a {
+.toWork {
 	position: absolute;
-	left: 50%;
 	bottom: 0;
 	margin-left: -17.5px;
     color: #FEFCFB;
 }
 
-.profile > a i {
+.left {
+	left: 20%;
+}
+
+.right {
+	right: 20%;
+}
+
+.toWork i {
 	font-size: 40px;
 	transition: color .5s;
 }
 
-.profile > a i:hover {
+.toWork i:hover {
 	color: #FFAD17;
 }
 
@@ -169,7 +176,7 @@ ul {
 }
 
 .project {
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 
 .project a {
@@ -195,6 +202,7 @@ ul {
 	background-color: #1282A2;
 	text-align: left;
 	margin: 0;
+	margin-bottom: 10px;
 	border-top: 5px dashed #1282A2;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -269,24 +277,19 @@ a.github {
 
 	.folder {
 		float: left;
-		width: 60%;
+		width: 75%;
+		margin-bottom: 0;
 	}
 
 	.project {
 		float: left;
 		width: 45%;
-		margin: 0 calc(10% / 4) 20px;
+		margin: 0 calc(10% / 4) 40px;
 	}
 
 	.project a {
 		margin-bottom: 10px;
     	float: right;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.folder {
-		width: 70%;
 	}
 }
 
@@ -311,11 +314,7 @@ a.github {
 	.project {
 		float: left;
 		width: 25%;
-		margin: 0 calc(25% / 6) 20px;
-	}
-
-	.folder {
-		width: 60%;
+		margin: 0 calc(25% / 6) 40px;
 	}
 
 	.btt {
