@@ -1,13 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const projects = [
+		//Biscake.come
+		[
+			'Business Landing Page',
+			'HTML, CSS, Responsive Design, JavaScript, Bootstrap',
+			'images/projects/project_biscake.png',
+			'https://ephillius.github.io/techdegree-project1/',
+			'https://github.com/Ephillius/techdegree-project1'	
+		],
 
 		//1
 		[
 			'Profile Page',
 			'HTML, CSS, Responsive Design',
 			'images/projects/project1.png',
-			'https://ephillius.github.io/techdegree-project1/',
-			'https://github.com/Ephillius/techdegree-project1'	
+			'https://ephillius.github.io/biscake/',
+			'https://github.com/Ephillius/biscake'	
 		],
 
 		//2
@@ -145,10 +153,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			const code = document.createElement('A');			
 			live.setAttribute('target', '_blank');
 			live.className = 'live hvr-buzz-out';
-			live.innerHTML = 'See it live';
+			live.innerHTML = 'Live';
 			code.setAttribute('target', '_blank');
 			code.className = 'code hvr-buzz-out';
-			code.innerHTML = 'See the code';
+			code.innerHTML = 'Github';
 			parent[i].appendChild(live);
 			parent[i].appendChild(code);
 		}
