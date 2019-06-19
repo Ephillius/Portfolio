@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			'Business Landing Page',
 			'HTML, CSS, Responsive Design, JavaScript, Bootstrap',
 			'images/projects/project_biscake.png',
-			'https://ephillius.github.io/techdegree-project1/',
-			'https://github.com/Ephillius/techdegree-project1'	
+			'https://ephillius.github.io/biscake/',
+			'https://github.com/Ephillius/biscake'	
 		],
 
 		//1
@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			'Profile Page',
 			'HTML, CSS, Responsive Design',
 			'images/projects/project1.png',
-			'https://ephillius.github.io/biscake/',
-			'https://github.com/Ephillius/biscake'	
+			'https://ephillius.github.io/techdegree-project1/',
+			'https://github.com/Ephillius/techdegree-project1'	
 		],
 
 		//2
