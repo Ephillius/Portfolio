@@ -180,7 +180,7 @@ ul {
 }
 
 .project a {
-	display: inline-block;	
+	display: block;	
 	background-color: #667761;
 }
 
