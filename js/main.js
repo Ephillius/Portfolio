@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		//Biscake.come
 		[
 			'Business Landing Page',
-			'HTML, CSS, Responsive Design, JavaScript, Bootstrap',
+			'HTML, CSS, JavaScript, Bootstrap',
 			'images/projects/project_biscake.png',
 			'https://ephillius.github.io/biscake/',
 			'https://github.com/Ephillius/biscake'	
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		//1
 		[
 			'Profile Page',
-			'HTML, CSS, Responsive Design',
+			'HTML, CSS',
 			'images/projects/project1.png',
 			'https://ephillius.github.io/techdegree-project1/',
 			'https://github.com/Ephillius/techdegree-project1'	
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		//2
 		[
 			'Portfolio Template',
-			'HTML, CSS, Responsive Design',
+			'HTML, CSS',
 			'images/projects/project2.png',
 			'https://ephillius.github.io/techdegree-project2/',
 			'https://github.com/Ephillius/techdegree-project2',	
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		//3
 		[
 			'Newsletter Form',
-			'HTML, CSS, Responsive Design',
+			'HTML, CSS',
 			'images/projects/project3.png',
 			'https://github.com/Ephillius/techdegree-project3',
 			'https://ephillius.github.io/techdegree-project3/'
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		//4
 		[
 			'Sass Style Guide Kit',
-			'HTML, Sass, Responsive Design',
+			'HTML, CSS(Sass)',
 			'images/projects/project4.png',
 			'https://ephillius.github.io/techdegree-project4/',
 			'https://github.com/Ephillius/techdegree-project4'
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		//5
 		[
 			'Interactive Gallery',
-			'HTML, CSS, JavaScript(Jquery), Responsive Design',
+			'HTML, CSS, JavaScript(Jquery)',
 			'images/projects/project5.png',
 			'https://ephillius.github.io/techdegree-project5/',
 			'https://github.com/Ephillius/techdegree-project5'
@@ -62,6 +62,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			'images/projects/project6.png',
 			'https://ephillius.github.io/techdegree-project6/',
 			'https://github.com/Ephillius/techdegree-project6'
+		]
+
+		//7
+		[
+			'WebApp Dashboard',
+			'Grid + Flexbox, JavaScript',
+			'images/projects/project7.png',
+			'https://ephillius.github.io/techdegree-project7/',
+			'https://github.com/Ephillius/techdegree-project7'
 		]
 	];
 
