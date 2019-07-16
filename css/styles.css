@@ -28,7 +28,6 @@ a:visited {
 }
 
 ul {
-	margin-top: 40px;
 	list-style: none;
 	padding-left: 0;
 }
@@ -36,14 +35,6 @@ ul {
 .btt {
 	color: #FEFCFB;
 	margin-bottom: 30px;
-}
-
-.intro span,
-.foot span {
-	display: inline-block;
-	color: #FEFCFB;
-	font-size: 10px;
-	padding-bottom: 12px; 
 }
 
 /*SHARED CSS*/
@@ -60,6 +51,7 @@ ul {
 .header {
 	z-index: 1;
 	position: fixed;
+	top: 0;
     width: 100%;
     height: 78px;
 	background-color: #222;
@@ -96,6 +88,9 @@ ul {
 
 /*PROFILE*/
 .profile {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
 	position: relative;
 	height: 100vh;
 	background: url("../images/background.jpg") no-repeat center center;
@@ -105,16 +100,7 @@ ul {
 .toWork {
 	position: absolute;
 	bottom: 0;
-	margin-left: -17.5px;
     color: #FEFCFB;
-}
-
-.left {
-	left: 20%;
-}
-
-.right {
-	right: 20%;
 }
 
 .toWork i {
@@ -136,14 +122,7 @@ ul {
 }
 
 .intro {
-	position: relative;
-	padding-top: 18vh;
-}
-
-.photo {
-	width: 200px;
-	border-radius: 100%;
-	border: 5px solid #FEFCFB;
+	z-index: 1;
 }
 
 .profile h1 {
@@ -180,8 +159,10 @@ ul {
 }
 
 .project a {
-	display: block;	
+	display: block;
+	opacity: .5;	
 	background-color: #667761;
+	transition: background-color 1s;
 }
 
 .project a:hover {
@@ -216,30 +197,24 @@ ul {
 }
 
 /*SOCIAL LINKS*/
-.foot{
-	padding: 10px 0;
-}
-
-.foot p {
-	color: #FEFCFB;
-}
-
-.foot ul li {
-	display: inline-block;
+.links {
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a.social {
-	display: inline-block;
-    text-indent: -9999px;
+	display: block;
+	opacity: 1;
     margin: 5px;
     width: 30px;
     height: 30px;
     background-size: 30px 30px;
-    opacity: 1;
-    transition: all .5s;
+    transition: opacity 1s;
 }
-a.resume {
-	background-image: url("../images/icons/cv-icon.svg");
+
+a.social:hover {
+	opacity: .5;
 }
 
 a.linkedin {
@@ -250,24 +225,39 @@ a.github {
 	background-image: url("../images/icons/github.svg");
 }
 
+/*FOOTER*/
+.foot {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.foot p {
+	color: #FEFCFB;
+}
+
 .foot .email {
 	width: 100px;
 	background-color: #FFAD17;
 }
 
+.foot span {
+	color: #FEFCFB;
+	font-size: 10px;
+	padding: 30px 0 12px;
+}
+
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 768px) {
-	.intro {
-		padding-top: 25vh; 
-	}
-
 	.intro .email {
 		font-size: 30px;
 		width: 320px;
 	}
 
-	.profile > a {
+	.toWork {
 		bottom: 30px;
 	}
 
@@ -298,11 +288,7 @@ a.github {
 		font-size: 1.5em;
 	}
 
-	.profile > a {
-		margin-left: -21.25px;
-	}
-
-	.profile > a i {
+	.toWork i {
 	    font-size: 60px;
 	}
 
