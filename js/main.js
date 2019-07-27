@@ -71,6 +71,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			'images/projects/project7.png',
 			'https://ephillius.github.io/techdegree-project7/',
 			'https://github.com/Ephillius/techdegree-project7'
+		],
+
+		//8
+		[
+			'Employee Directory Api',
+			'JavaScript (Ajax Request - Api)',
+			'images/projects/project8.png',
+			'https://ephillius.github.io/techdegree-project8/',
+			'https://github.com/Ephillius/techdegree-project8'
 		]
 	];
 
