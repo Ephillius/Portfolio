@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const projects = [
+	const frontendProjs = [
 		//Biscake.come
 		[
 			'Business Landing Page',
 			'HTML, CSS, JavaScript, Bootstrap',
-			'images/projects/project_biscake.png',
+			'images/frontend/project_biscake.png',
 			'https://ephillius.github.io/biscake/',
 			'https://github.com/Ephillius/biscake'	
 		],
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		[
 			'Profile Page',
 			'HTML, CSS',
-			'images/projects/project1.png',
+			'images/frontend/project1.png',
 			'https://ephillius.github.io/techdegree-project1/',
 			'https://github.com/Ephillius/techdegree-project1'	
 		],
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		[
 			'Portfolio Template',
 			'HTML, CSS',
-			'images/projects/project2.png',
+			'images/frontend/project2.png',
 			'https://ephillius.github.io/techdegree-project2/',
 			'https://github.com/Ephillius/techdegree-project2',	
 		],
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		[
 			'Newsletter Form',
 			'HTML, CSS',
-			'images/projects/project3.png',
+			'images/frontend/project3.png',
 			'https://github.com/Ephillius/techdegree-project3',
 			'https://ephillius.github.io/techdegree-project3/'
 		],
@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		//4
 		[
 			'Sass Style Guide Kit',
-			'HTML, CSS(Sass)',
-			'images/projects/project4.png',
+			'HTML, CSS (Sass)',
+			'images/frontend/project4.png',
 			'https://ephillius.github.io/techdegree-project4/',
 			'https://github.com/Ephillius/techdegree-project4'
 			
@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		//5
 		[
 			'Interactive Gallery',
-			'HTML, CSS, JavaScript(Jquery)',
-			'images/projects/project5.png',
+			'HTML, CSS, JavaScript (Jquery)',
+			'images/frontend/project5.png',
 			'https://ephillius.github.io/techdegree-project5/',
 			'https://github.com/Ephillius/techdegree-project5'
 		],
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		[
 			'Game Show App',
 			'JavaScript',
-			'images/projects/project6.png',
+			'images/frontend/project6.png',
 			'https://ephillius.github.io/techdegree-project6/',
 			'https://github.com/Ephillius/techdegree-project6'
 		],
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		[
 			'WebApp Dashboard',
 			'Grid + Flexbox, JavaScript',
-			'images/projects/project7.png',
+			'images/frontend/project7.png',
 			'https://ephillius.github.io/techdegree-project7/',
 			'https://github.com/Ephillius/techdegree-project7'
 		],
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		[
 			'Employee Directory Api',
 			'JavaScript (Ajax Request - Api)',
-			'images/projects/project8.png',
+			'images/frontend/project8.png',
 			'https://ephillius.github.io/techdegree-project8/',
 			'https://github.com/Ephillius/techdegree-project8'
 		]
@@ -88,6 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	const scrollToTop = document.querySelector('.btt');
 	const portfolio = document.querySelector('#work');
 	const email = document.getElementsByClassName('email');
+
+	/******SCROLL******/
 
 	function scroll(element) {
 		element.scrollIntoView(
@@ -110,8 +112,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		email[i].classList.add('hvr-ripple-out');
 	}
 
+
+	/******PROJECT LIBRARY APPEND******/
+
 	function createMainDiv() {
-		for (let i = 0; i < projects.length; i++) {
+		for (let i = 0; i < frontendProjs.length; i++) {
 			const projectDiv = document.createElement('DIV');
 			projectDiv.className = 'project clearfix';
 			portfolio.appendChild(projectDiv);
@@ -131,9 +136,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 
 		const images = document.getElementsByClassName('thumb');
-		for (let i = 0; i < projects.length; i++) {
-				images[i].setAttribute('src', projects[i][2]);
-				images[i].setAttribute('alt', projects[i][0]);
+		for (let i = 0; i < frontendProjs.length; i++) {
+				images[i].setAttribute('src', frontendProjs[i][2]);
+				images[i].setAttribute('alt', frontendProjs[i][0]);
 		}
 	}
 
@@ -152,9 +157,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		const titles = document.getElementsByClassName('project-name');
 		const skills = document.getElementsByClassName('caption');
-		for (let i = 0; i < projects.length; i++) {
-				titles[i].innerHTML = projects[i][0];
-				skills[i].innerHTML = projects[i][1];
+		for (let i = 0; i < frontendProjs.length; i++) {
+				titles[i].innerHTML = frontendProjs[i][0];
+				skills[i].innerHTML = frontendProjs[i][1];
 		}
 	}
 
@@ -174,9 +179,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		const live = document.getElementsByClassName('live');
 		const code = document.getElementsByClassName('code');
-		for (let i = 0; i < projects.length; i++) {
-				live[i].setAttribute('href', projects[i][3]);
-				code[i].setAttribute('href', projects[i][4]);
+		for (let i = 0; i < frontendProjs.length; i++) {
+				live[i].setAttribute('href', frontendProjs[i][3]);
+				code[i].setAttribute('href', frontendProjs[i][4]);
 		}
 	}
 

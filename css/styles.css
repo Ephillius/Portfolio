@@ -45,6 +45,15 @@ ul {
 	border-radius: 10px;
 	color: #FEFCFB;
 	font-weight: bold;
+	width: 49%;
+}
+
+.live {
+	float: left;
+}
+
+.code {
+	float: right;
 }
 
 /*HEADER*/
@@ -69,7 +78,7 @@ ul {
     transition: border .2s;
 }
 
-.header .logo {
+.header .logo a {
 	color: #FEFCFB;
 	transition: .3s;
 }
@@ -118,7 +127,7 @@ ul {
     right: 0;
     bottom: 0;
     left: 0;
-	background-color: rgba(0, 128, 128, 0.6);
+	background-color: rgba(0, 128, 128, 0.7);
 }
 
 .intro {
@@ -142,7 +151,7 @@ ul {
 }
 
 /*PROJECTS*/
-.gallery {
+.frontend {
 	padding: 20px 30px;
 }
 
@@ -155,7 +164,10 @@ ul {
 }
 
 .project {
+	display: inline-block;
+	margin: 0 auto;
 	margin-bottom: 50px;
+	max-width: 500px;
 }
 
 .project a {
@@ -261,25 +273,13 @@ a.github {
 		bottom: 30px;
 	}
 
-	.gallery {
+	.frontend {
 		padding-bottom: 50px;
 	}
 
-	.folder {
-		float: left;
-		width: 75%;
-		margin-bottom: 0;
-	}
-
 	.project {
-		float: left;
 		width: 45%;
-		margin: 0 calc(10% / 4) 40px;
-	}
-
-	.project a {
-		margin-bottom: 10px;
-    	float: right;
+		margin: 0 calc(10% / 4) 50px;
 	}
 }
 
@@ -292,15 +292,14 @@ a.github {
 	    font-size: 60px;
 	}
 
-	.gallery {
+	.frontend {
 	    max-width: 1366px;
 	    margin: 0 auto;
 	}
 
 	.project {
-		float: left;
 		width: 25%;
-		margin: 0 calc(25% / 6) 40px;
+		margin: 0 calc(25% / 6) 50px;
 	}
 
 	.btt {
